@@ -106,6 +106,7 @@ module.exports = function (app, collection) {
                 if (err) {
                   console.error(err);
                 } else {
+                  data.commentcount = data.comments.length;
                   res.json(data);
                 }
               }
